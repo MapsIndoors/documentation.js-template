@@ -1,0 +1,17 @@
+{
+  "name": "documentation.js-template",
+  "version": "1.0.0",
+  "description": "This is the template used for our javascript documentation generated with documentation.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MapsIndoors/documentation.js-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "documentation": "^7.1.0",
+    "github-slugger": "^1.2.0",
+    "vinyl": "^2.1.0",
+    "vinyl-fs": "^3.0.2"
+  }
+}

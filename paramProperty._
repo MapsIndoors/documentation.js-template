@@ -1,0 +1,16 @@
+<tr>
+  <td class='nowrap'><span class='code bold'><%- property.name %></span></td>
+  <td class='nowrap'><code class='quiet'><%= formatType(property.type) %></code></td>
+  <% if (property.default) { %>
+    (default <code><%- property.default %></code>)
+  <% } %></td>
+  <td class='break-word'><span><%= md(property.description, true) %></span></td>
+</tr>
+<% if(property.properties && property.properties.length) { %>
+  <% property.properties.forEach(function(childProperty) { %>
+    <%= renderParamProperty({
+      property: childProperty,
+      renderParamProperty: renderParamProperty
+    }) %>
+  <% }) %>
+<% } %>
